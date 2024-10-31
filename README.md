@@ -2,6 +2,9 @@
 
 This project demonstrates a comprehensive end-to-end MLOps pipeline for deploying machine learning models at scale. Leveraging GitHub Actions for continuous integration (CI) and continuous deployment (CD), Docker for containerization, and AWS ECS and EC2 for deployment, this setup automates the ML lifecycle from model training to production deployment. The project aims to provide a scalable and repeatable pipeline to bring machine learning models into production efficiently and reliably.
 
+## Architecture Diagram
+![architecture_diagram](https://github.com/aadhil96/End-to-End-Machine-Learning-Project/blob/616078693bb408602642e5f5ceca729255a0feff/cidcd.jpg)
+
 ## Key Features
 - **Automated CI/CD Pipeline with GitHub Actions**: Automatically triggers and runs tests, builds Docker images, and deploys to AWS, streamlining the model deployment process.
 - **Docker for Containerization**: Ensures consistent, portable, and isolated environments for the ML model across different stages of development and deployment.
