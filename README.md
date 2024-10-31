@@ -1,46 +1,18 @@
-# End-to-End-Wine-Quality-Prediction
+# End-to-End MLOps Machine Learning Pipeline using GitHub Actions, Docker, AWS ECS, and AWS EC2
 
+This project demonstrates a comprehensive end-to-end MLOps pipeline for deploying machine learning models at scale. Leveraging GitHub Actions for continuous integration (CI) and continuous deployment (CD), Docker for containerization, and AWS ECS and EC2 for deployment, this setup automates the ML lifecycle from model training to production deployment. The project aims to provide a scalable and repeatable pipeline to bring machine learning models into production efficiently and reliably.
 
-## Workflows
+## Key Features
+- **Automated CI/CD Pipeline with GitHub Actions**: Automatically triggers and runs tests, builds Docker images, and deploys to AWS, streamlining the model deployment process.
+- **Docker for Containerization**: Ensures consistent, portable, and isolated environments for the ML model across different stages of development and deployment.
+- **AWS ECS and EC2 for Scalable Deployment**: Deploys the model on AWS ECS for containerized workloads and EC2 for scalable compute, allowing flexibility in managing compute resources and costs.
+- **Modular Code Structure**: Organized project files for easy extension and maintenance, separating training, serving, and infrastructure configuration.
 
-1. Update config.yaml
-2. Update schema.yaml
-3. Update params.yaml
-4. Update the entity
-5. Update the configuration manager in src config
-6. Update the components
-7. Update the pipeline 
-8. Update the main.py
-9. Update the app.py
-
-
-# How to run?
-### STEPS:
-
-Clone the repository
-
-```bash
-https://github.com/aadhil96/End-to-End-Machine-Learning-Project
-```
-### STEP 01- Create a conda environment after opening the repository
-
-```bash
-conda create -n mlproj python=3.8 -y
-```
-
-```bash
-conda activate mlproj
-```
-
-
-### STEP 02- install the requirements
-```bash
-pip install -r requirements.txt
-```
-
-```bash
-python app.py
-```
+## Workflow
+1. **Data Preparation and Model Training**: Prepare data and train the model locally or using cloud resources. Commit changes to GitHub.
+2. **Continuous Integration**: Upon code changes, GitHub Actions runs tests and builds the Docker image.
+3. **Continuous Deployment**: GitHub Actions pushes the Docker image to Amazon Elastic Container Registry (ECR) and deploys it to ECS or EC2 instances.
+4. **Model Serving**: Model is served as a REST API, capable of handling requests in real-time.
 
 
 # AWS-CICD-Deployment-with-Github-Actions
